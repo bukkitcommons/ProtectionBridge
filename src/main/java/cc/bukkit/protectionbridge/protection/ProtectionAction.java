@@ -17,8 +17,7 @@ package cc.bukkit.protectionbridge.protection;
 public enum ProtectionAction {
     BREAK(0),
     PLACE(1),
-    INTERACT(2),
-    MOVE(3);
+    INTERACT(2);
     int id;
     ProtectionAction(int id){
         this.id = id;
