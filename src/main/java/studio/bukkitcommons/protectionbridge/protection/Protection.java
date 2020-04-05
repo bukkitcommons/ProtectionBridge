@@ -16,6 +16,7 @@ package studio.bukkitcommons.protectionbridge.protection;
 
 import org.bukkit.Location;
 import org.bukkit.block.Block;
+import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
 import studio.bukkitcommons.protectionbridge.RequiredCheckPlayer;
 
@@ -30,6 +31,12 @@ public interface Protection {
      * @return Name of Protection Method.
      */
     @NotNull String getName();
+
+    /**
+     * Gets the Protection method Plugin instance
+     * @return Plugins instance of Protection Method.
+     */
+    @NotNull Plugin getPlugin();
 
     /**
      * Checks if protection method support custom flags.
