@@ -120,5 +120,12 @@
             <scope>system</scope>
             <systemPath>${basedir}/libs/Residence4.9.0.5.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>com.griefcraft.lwc</groupId>
+            <artifactId>LWCX</artifactId>
+            <version>2.2.5</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/LWCX-2.2.5.jar</systemPath>
+        </dependency>
     </dependencies>
 </project>

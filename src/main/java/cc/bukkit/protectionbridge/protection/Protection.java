@@ -100,6 +100,7 @@ public interface Protection {
      *
      * @param block  The location that you want to checks
      * @param player The target player
+     * @param action   The action
      * @param flag The custom protection flag
      * @return The result
      */
