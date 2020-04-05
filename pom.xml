@@ -45,7 +45,7 @@
                                 <relocation>
                                     <pattern>org.bstats</pattern>
                                     <!-- Replace this with your package! -->
-                                    <shadedPattern>studio.bukkitcommons.protectionbridge.bstats</shadedPattern>
+                                    <shadedPattern>cc.bukkit.protectionbridge.bstats</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>

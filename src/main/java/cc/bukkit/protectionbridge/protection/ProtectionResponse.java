@@ -12,13 +12,27 @@
  * along with ProtectionBridge.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package studio.bukkitcommons.protectionbridge.protection;
+/*
+ * This file is part of ProtectionBridge.
+ * ProtectionBridge is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * ProtectionBridge is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with ProtectionBridge.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+package cc.bukkit.protectionbridge.protection;
 
 import org.bukkit.Location;
 import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import studio.bukkitcommons.protectionbridge.RequiredCheckPlayer;
+import cc.bukkit.protectionbridge.RequiredCheckPlayer;
 
 public class ProtectionResponse {
     public enum ResponseType {
