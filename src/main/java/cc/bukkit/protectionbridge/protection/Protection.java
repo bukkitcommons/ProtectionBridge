@@ -33,6 +33,7 @@ import org.bukkit.block.Block;
 import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
 import cc.bukkit.protectionbridge.RequiredCheckPlayer;
+import org.jetbrains.annotations.Nullable;
 
 public interface Protection {
     /**
@@ -73,4 +74,20 @@ public interface Protection {
      * @return The result
      */
     @NotNull ProtectionResponse check(@NotNull Block block, @NotNull RequiredCheckPlayer player);
+
+    /**
+     * Do permission checks with location
+     * @param location The location that you want to checks
+     * @param player The target player
+     * @return The result
+     */
+    @NotNull ProtectionResponse check(@NotNull Location location, @NotNull RequiredCheckPlayer player, @Nullable ProtectionFlag flag);
+
+    /**
+     * Do permission checks with block
+     * @param block The location that you want to checks
+     * @param player The target player
+     * @return The result
+     */
+    @NotNull ProtectionResponse check(@NotNull Block block, @NotNull RequiredCheckPlayer player, @Nullable ProtectionFlag flag);
 }
