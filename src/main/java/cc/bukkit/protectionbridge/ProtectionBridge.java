@@ -48,7 +48,6 @@ public final class ProtectionBridge extends JavaPlugin {
         saveDefaultConfig();
         reloadConfig();
         this.servicesManager = Bukkit.getServicesManager();
-
     }
 
     @Override
