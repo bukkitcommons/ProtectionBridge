@@ -28,66 +28,80 @@
 
 package cc.bukkit.protectionbridge.protection;
 
+import cc.bukkit.protectionbridge.RequiredCheckPlayer;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
-import cc.bukkit.protectionbridge.RequiredCheckPlayer;
 import org.jetbrains.annotations.Nullable;
 
 public interface Protection {
     /**
      * Checks if protection method is enabled.
+     *
      * @return Success or Failure
      */
     boolean isEnabled();
+
     /**
      * Gets name of Protection method.
+     *
      * @return Name of Protection Method.
      */
     @NotNull String getName();
 
     /**
      * Gets the Protection method Plugin instance
+     *
      * @return Plugins instance of Protection Method.
      */
     @NotNull Plugin getPlugin();
 
     /**
      * Checks if protection method support custom flags.
+     *
      * @return Support or Not support.
      */
     boolean hasFlagSupport();
 
     /**
      * Do permission checks with location
+     *
      * @param location The location that you want to checks
-     * @param player The target player
+     * @param player   The target player
+     * @param action   The action
      * @return The result
      */
-    @NotNull ProtectionResponse check(@NotNull Location location, @NotNull RequiredCheckPlayer player);
+    @NotNull ProtectionResponse check(@NotNull Location location, @NotNull RequiredCheckPlayer player, @NotNull ProtectionAction action);
 
     /**
      * Do permission checks with block
-     * @param block The location that you want to checks
+     *
+     * @param block  The location that you want to checks
      * @param player The target player
+     * @param action The action
      * @return The result
      */
-    @NotNull ProtectionResponse check(@NotNull Block block, @NotNull RequiredCheckPlayer player);
+    @NotNull ProtectionResponse check(@NotNull Block block, @NotNull RequiredCheckPlayer player, @NotNull ProtectionAction action);
 
     /**
      * Do permission checks with location
+     *
      * @param location The location that you want to checks
-     * @param player The target player
+     * @param player   The target player
+     * @param action   The action
+     * @param flag The custom protection flag
      * @return The result
      */
-    @NotNull ProtectionResponse check(@NotNull Location location, @NotNull RequiredCheckPlayer player, @Nullable ProtectionFlag flag);
+    @NotNull ProtectionResponse check(@NotNull Location location, @NotNull RequiredCheckPlayer player, @NotNull ProtectionAction action, @Nullable ProtectionFlag flag);
 
     /**
      * Do permission checks with block
-     * @param block The location that you want to checks
+     *
+     * @param block  The location that you want to checks
      * @param player The target player
+     * @param flag The custom protection flag
      * @return The result
      */
-    @NotNull ProtectionResponse check(@NotNull Block block, @NotNull RequiredCheckPlayer player, @Nullable ProtectionFlag flag);
+    @NotNull ProtectionResponse check(@NotNull Block block, @NotNull RequiredCheckPlayer player, @NotNull ProtectionAction action, @Nullable ProtectionFlag flag);
 }

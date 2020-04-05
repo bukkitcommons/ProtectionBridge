@@ -70,6 +70,15 @@
             <id>CodeMC</id>
             <url>https://repo.codemc.org/repository/maven-public</url>
         </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>enginehub</id>
+            <url>https://maven.enginehub.org/repo/</url>
+        </repository>
+
     </repositories>
 
     <dependencies>
@@ -90,6 +99,19 @@
             <artifactId>bstats-bukkit</artifactId>
             <version>1.7</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.TechFortress</groupId>
+            <artifactId>GriefPrevention</artifactId>
+            <version>16.7.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.intellectualsites.plotsquared</groupId>
+            <artifactId>PlotSquared-CoreAPI</artifactId>
+            <version>5.1</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/PlotSquared-Bukkit-4.453.jar</systemPath>
         </dependency>
     </dependencies>
 </project>

@@ -5,3 +5,7 @@ api-version: 1.13
 load: STARTUP
 authors: [BukkitCommonsStudio]
 description: A bridge to link region protection plugins like Vault
+softdepend:
+  - GriefPreventionAdapter
+  - Residence
+  - PlotSquared
