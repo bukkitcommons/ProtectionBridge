@@ -113,5 +113,12 @@
             <scope>system</scope>
             <systemPath>${basedir}/libs/PlotSquared-Bukkit-4.453.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>net.zrips.residence</groupId>
+            <artifactId>Residence</artifactId>
+            <version>4.9.0.5</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/Residence4.9.0.5.jar</systemPath>
+        </dependency>
     </dependencies>
 </project>

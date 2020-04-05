@@ -34,7 +34,7 @@ public class GriefPreventionAdapter implements Protection {
     private final ProtectionBridge plugin;
     private final GriefPrevention griefPrevention;
 
-    public GriefPreventionAdapter(ProtectionBridge plugin, GriefPrevention griefPrevention) {
+    public GriefPreventionAdapter(@NotNull ProtectionBridge plugin, @Nullable GriefPrevention griefPrevention) {
         this.plugin = plugin;
         this.isEnabled = griefPrevention != null && griefPrevention.isEnabled();
         this.griefPrevention = griefPrevention;

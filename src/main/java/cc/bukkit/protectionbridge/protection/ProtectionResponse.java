@@ -57,6 +57,9 @@ public class ProtectionResponse {
         this.type = type;
         this.cancelPlugin = cancelPlugin;
         this.errorMessages = errorMessages;
+        if(type == ResponseType.DENIED&& (cancelPlugin == null || errorMessages == null)){
+            throw new IllegalArgumentException("cancelPlugin and errorMessages cannot be null if type is DENIED");
+        }
     }
 
     @NotNull

@@ -58,5 +58,14 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: net.zrips.residence:Residence:4.9.0.5">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/Residence4.9.0.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
